@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="westtle">
+	<meta name="description" content="A simple template for a blog site.">
+	<meta name="keywords" content="blog, template, blog template, blog site, blog post, blog post template, simple blog template">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ashesh's Blog</title>
+
+	<link rel="icon" type="image/x-icon" href="#">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../styles/example-post.css">
+</head>
+<body>
+	<header class="container__">
+		<h1 class="__header-title"><a href="../../index.html">Blogs</a></h1>
+		<nav class="__header-nav">
+			<ul>
+				<li><a href="../../index.html">Home</a></li>
+				<!-- <li><a href="./about.html">About</a></li> -->
+				<li><a href="./posts.html">Posts</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container__">
+		<section class="__post">
+			<img class="_thumbnail" src="../img/bayer3.webp" width="800" height="400" alt="Article thumbnail.">
+			<div class="_title-date">
+				<h2>Bayer Levekusen through Data Lens</h2>
+				<time datetime="2013-05-03"><i>May 28, 2024</i></time>
+			</div>
+
+			<p>Xabi's men played 34 games in the Bundesliga where they won 28 matches and drew 6 matches, finishing the league with 90 points. After Xabi Alonso took charge in the previous season, they rose from the second bottom after eight Bundesliga games and finished the 2022-23 season in 6th place. The 2023-24 season has been an inspirational season for Bayer as they went on to win their first-ever Bundesliga, reminiscent of Leicester City's historic league-winning season. Let's see how they performed statistically in Bundesliga from a data standpoint.</p>
+
+			<h3 class="_secondary-title">Total Passes</h3>
+
+			<div style="display: flex; justify-content: space-between;">
+				<img class="_image" src="../img/pass_bayer.png" width="50%" height="720" alt="Pass Network Visualization for Bayer Leverkusen">
+				<img class="_image" src="../img/newplot.png" width="50%" height="720" alt="Top Ten Passers in Bayer Leverkusen">
+			</div>			<p>Bayer Leverkusen played a total of 24,244 passes in the 34-match Bundesliga season, averaging around 713 passes per match. 
+				They distributed 12,627 passes in the first half and 11,572 passes in the second half, showing balanced control throughout both halves. 
+				However, they misplaced approximately 2,756 passes, which accounts for about 11% of their total passes. 
+				Despite this, Leverkusen has built a solid passing foundation, establishing a distinct identity in their style of play.
+				In the second chart we can see that Granit Xhaka has played the highest number of passes. We can see the midfield being built around him. 
+				However, in the defensive third we can see Alejandro Grmaldo Garcia being the higherst pass maker along side Jonathan Tah. 
+			</p>
+			<h3 class="_secondary-title">Pass Heatmap</h3>
+
+			<p>One of the most intersting things about the data provided by Statsbomb is that, the location for each of the events is given in a coordinates for a 120 X 80 units football pitch. Therefore, I present you the pass heat map for Bayer Leverkusen's 2023-24 season. we can see most of their passes are being played in the midfield third. Which means that, their midfield is doing most of their work. Kudos to the midfield for setting up a solid foundation.</i></p>
+			<img class="_image" src="../img/passheat.png" width="1280" height="720" alt="Article thumbnail.">
+			<h3 class="_secondary-title">Pass Network</h3>
+
+			<p>A pass network defines the stable position of a team while making passing actions.
+				 The picture below shows the positions of the Bayer Leverkusen players, indicating their average position throughout the season during passes.
+				  In the network below, we can see Granit Xhaka, Alejandro Grimaldo García, Jonathan Tah, Edmond Fayçal Tapsoba, and Florian Wirtz having a huge marker.
+				   This indicates that they have been significantly involved in the passes played by the team as a whole. 
+				   Moreover, we can see a thicker line between Granit Xhaka and Florian Wirtz. 
+				   This indicates that there were a higher number of passes played between them compared to other players in the team.
+				   We can see the count of top ten passes played between two players. We can see that highest number of passes have been played by Exequiel Alejandro Palacios to Granit Xhaka. 
+				</p>
+			<div style="display: flex; justify-content: space-between;">
+				<img class="_image" src="../img/passnetwork.png" width="60%" height="720" alt="Pass Network Visualization for Bayer Leverkusen">
+				<img class="_image" src="../img/toptenpass.png" width="40%" height="720" alt="Top Ten Passers in Bayer Leverkusen">
+			</div>
+			<h3 class="_secondary-title">Attack-Shots</h3>
+
+			
+			<div style="display: flex; justify-content: space-between;">
+				<img class="_image" src="../img/Screenshot 2024-05-28 at 21.51.57.png" width="33%" height="720" alt="Pass Network Visualization for Bayer Leverkusen">
+				<img class="_image" src="../img/Screenshot 2024-05-28 at 21.52.06.png" width="33%" height="720" alt="Top Ten Passers in Bayer Leverkusen">
+				<img class="_image" src="../img/Screenshot 2024-05-28 at 21.52.15.png" width="33%" height="720" alt="Top Ten Passers in Bayer Leverkusen">
+
+			</div>
+			<p> 
+				Above shown are the shopt maps for Bayer Leverkusen in the Bundesliga 23-24 season. We can see that most of the shots came from a particular side of the D-box area.
+				Similarly, majority of the goals also came from the same area. However, we also have been able to graph a probabilistic model that shows the probability of the shotes taken in certain areas of the pitch.
+			</p>
+			<h3 class="_secondary-title">Shots-indepth</h3>
+
+			<div style="display: flex; justify-content: space-between;">
+				<img class="_image" src="../img/shot1.png" width="33%" height="720" alt="Pass Network Visualization for Bayer Leverkusen">
+				<img class="_image" src="../img/shot2.png" width="33%" height="720" alt="Pass Network Visualization for Bayer Leverkusen">
+				<img class="_image" src="../img/shot3.png" width="33%" height="720" alt="Pass Network Visualization for Bayer Leverkusen">
+			</div>
+			The plots above show the total shots taken by Bayer in the first half, second half and the types of shots that have been taken.
+			We can see that, the shots taken in the second half is significantly more than the numbers in the first half. Similarly, we can see the results in the goal tally as well. 
+			Out of the 86 goals scored by the team, 8 came from penalty and 2 came from direct freekicks. We can see that majority of the goals came from inside the box. However, there was significant amount of attempts from outside the boxes as well.
+
+			<h3 class="_secondary-title">Expected goals (xG)</h3>
+			<p>Expected goals is a statistical metric in football that defines the quality of the opportunity to score a goal. Thus, it defines the quality of the shots within a value of 0 to 1. Therefore, if the xG of a shot is 0.6, it means that the shot has a 60 percent chance of it being a goal.
+				 With the data provided by StatsBomb, the xG of each match can be calculated. Below, we can see the expected goals for two matches, these are the matches with the highest and the lowest expected goals for the Bayer Leverkusen which were 4.004015 and 0.528234.
+				However, the actual score in each of the matches were 3-2 and 2-1 respectively in favor of Bayer Leverkusen.
+				</p>
+			<div style="display: flex; justify-content: space-between;">
+				<img class="_image" src="../img/xg1.png" width="50%" height="720" alt="Pass Network Visualization for Bayer Leverkusen">
+				<img class="_image" src="../img/xg2.png" width="50%" height="720" alt="Pass Network Visualization for Bayer Leverkusen">
+			</div>
+			<h3 class="_secondary-title">Clustering Passes</h3>
+			<p>There were 20 types of passes that were played by Bayer Leverkusen. 
+				The coordinates of the pass, the distance and the angle of the pass were considered to find different types of passes played by the team.
+			</p>
+			<div class="image-container">
+				<!-- Dynamically generating image elements for demonstration -->
+				<script>
+					const imageCount = 20;
+					const container = document.querySelector('.image-container');
+		
+					for (let i = 0; i < imageCount; i++) {
+						const img = document.createElement('img');
+						img.className = '_image';
+						img.src = `../img/ground_passes_cluster_${i}.png`;
+						img.alt = `Pass Network Visualization for Bayer Leverkusen - Cluster ${i}`;
+						container.appendChild(img);
+					}
+				</script>
+			</div>
+			<nav class="_bottom-navigation" aria-label="bottom-navigation">
+				<ul>
+					<li><a href="../../index.html">Home</a></li>
+					<span aria-hidden="true">-</span>
+					<li><a href="./posts.html">Posts</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		
+	</main>
+
+	<footer>
+		<p class="__footer-copyright">&copy; Copyrights, @asheshh-lal</p>
+	</footer>
+</body>
+</html>
